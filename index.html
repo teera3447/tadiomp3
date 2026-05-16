@@ -1,51 +1,216 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width">
-<title>Tadio Music WAP</title>
 
-<link rel="stylesheet" href="style.css">
+<head>
+
+<meta charset="utf-8">
+
+<meta
+name="viewport"
+content="width=device-width">
+
+<title>NOKIA MUSIC WAP</title>
+
+<style>
+
+body{
+
+background:#dce9ff;
+
+font-family:Tahoma;
+
+font-size:14px;
+
+max-width:320px;
+
+margin:auto;
+
+padding:5px;
+
+color:#000;
+
+}
+
+.header{
+
+background:#003399;
+
+color:#fff;
+
+padding:8px;
+
+text-align:center;
+
+font-size:18px;
+
+font-weight:bold;
+
+border:2px solid #001a66;
+
+}
+
+.menu{
+
+background:#bcd3ff;
+
+padding:5px;
+
+margin-top:5px;
+
+text-align:center;
+
+font-size:12px;
+
+}
+
+.menu a{
+
+color:#003399;
+
+font-weight:bold;
+
+text-decoration:none;
+
+}
+
+.song{
+
+background:#fff;
+
+border:1px solid #999;
+
+padding:6px;
+
+margin-top:6px;
+
+}
+
+.song-title{
+
+font-weight:bold;
+
+color:#003399;
+
+}
+
+a{
+
+color:#003399;
+
+font-weight:bold;
+
+text-decoration:none;
+
+}
+
+.footer{
+
+margin-top:10px;
+
+text-align:center;
+
+font-size:11px;
+
+color:#555;
+
+}
+
+</style>
+
 </head>
 
 <body>
 
-<div class="logo">
-Tadio MUSIC
+<div class="header">
+
+NOKIA MUSIC WAP
+
 </div>
 
-<input type="text" id="search" placeholder="ค้นหาเพลง">
+<div class="menu">
 
-<select id="category">
-<option value="all">ทั้งหมด</option>
-<option value="ลูกทุ่ง">ลูกทุ่ง</option>
-<option value="สตริง">สตริง</option>
-<option value="นักร้อง">นักร้อง</option>
-</select>
+<a href="#ลูกทุ่ง">ลูกทุ่ง</a> |
 
-<hr>
+<a href="#สตริง">สตริง</a> |
 
-<div id="songs"></div>
+<a href="#3gp">3GP</a>
 
-<hr>
+</div>
 
-<h3>อัปโหลดเพลง</h3>
+<a name="ลูกทุ่ง"></a>
 
-<input type="text" id="title" placeholder="ชื่อเพลง">
+<div class="song">
 
-<select id="uploadCategory">
-<option>ลูกทุ่ง</option>
-<option>สตริง</option>
-<option>นักร้อง</option>
-</select>
+<div class="song-title">
 
-<input type="file" id="file">
+เพลงลูกทุ่งตัวอย่าง
 
-<button onclick="uploadSong()">
-อัปโหลด
-</button>
+</div>
 
-<script src="app.js"></script>
+หมวด:
+ลูกทุ่ง
+
+<br><br>
+
+<a href="media/song1.mp3">
+
+ดาวน์โหลด MP3
+
+</a>
+
+</div>
+
+<a name="สตริง"></a>
+
+<div class="song">
+
+<div class="song-title">
+
+เพลงสตริงตัวอย่าง
+
+</div>
+
+หมวด:
+สตริง
+
+<br><br>
+
+<a href="media/song2.m4a">
+
+ดาวน์โหลด M4A
+
+</a>
+
+</div>
+
+<a name="3gp"></a>
+
+<div class="song">
+
+<div class="song-title">
+
+MV ยุค Nokia
+
+</div>
+
+หมวด:
+วิดีโอ 3GP
+
+<br><br>
+
+<a href="media/video1.3gp">
+
+ดาวน์โหลด 3GP
+
+</a>
+
+</div>
+
+<div class="footer">
+
+Nokia Music WAP © 2026
+
+</div>
 
 </body>
 </html>
