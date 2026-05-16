@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Tadio Music WAP</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="logo">
+Tadio MUSIC
+</div>
+
+<input type="text" id="search" placeholder="ค้นหาเพลง">
+
+<select id="category">
+<option value="all">ทั้งหมด</option>
+<option value="ลูกทุ่ง">ลูกทุ่ง</option>
+<option value="สตริง">สตริง</option>
+<option value="นักร้อง">นักร้อง</option>
+</select>
+
+<hr>
+
+<div id="songs"></div>
+
+<hr>
+
+<h3>อัปโหลดเพลง</h3>
+
+<input type="text" id="title" placeholder="ชื่อเพลง">
+
+<select id="uploadCategory">
+<option>ลูกทุ่ง</option>
+<option>สตริง</option>
+<option>นักร้อง</option>
+</select>
+
+<input type="file" id="file">
+
+<button onclick="uploadSong()">
+อัปโหลด
+</button>
+
+<script src="app.js"></script>
+
+</body>
+</html>
